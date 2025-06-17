@@ -3,71 +3,132 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Extensão de Cílios em Paraisópolis - Fran Costa</title>
-  <meta name="description" content="Realce seu olhar com a extensão de cílios da Franciele Costa, especialista em Paraisópolis - MG. Agende já seu atendimento personalizado.">
-  <meta name="keywords" content="extensão de cílios, Paraisópolis, MG, Franciele Costa, fio a fio, volume russo, cílios perfeitos">
-  <link rel="stylesheet" href="style.css" />
+  <title>Franciele Costa - Extensão de Cílios</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-
   <header>
-    <h1>Extensão de Cílios em Paraisópolis - MG</h1>
-    <p>Com Franciele Costa, realce sua beleza com naturalidade e sofisticação</p>
+    <div class="site-title">Franciele Costa</div>
+    <button class="menu-button" onclick="document.querySelector('nav').classList.toggle('show')">☰</button>
   </header>
 
-  <section id="apresentacao">
-    <h2>Franciele Costa</h2>
-    <p>Bem-vinda ao meu estúdio de extensão de cílios! Sou Franciele Costa, apaixonada por valorizar sua beleza natural com cílios deslumbrantes. Com anos de experiência, ofereço um atendimento personalizado e técnicas modernas para realçar seu olhar.</p>
+  <nav>
+    <a href="#welcome">Boas-vindas</a>
+    <a href="#techniques">Técnicas</a>
+    <a href="#experiencia">Experiência</a>
+    <a href="#filosofia">Filosofia</a>
+    <a href="#feedback">Feedback</a>
+    <a href="#formulario">Contato</a>
+    <a href="#contato">Endereço</a>
+  </nav>
+
+  <img src="imagens/franciele.jpeg" alt="Franciele Costa" class="profile-image">
+  <section id="welcome" class="welcome">
+      <h2>Franciele Costa / Extensão de Cílios /  Paraisópolis - MG</h2>
+  <p>
+    Seja bem-vinda! Sou 
+    <strong>Franciele Costa</strong>,
+     designer de cílios em <strong>Paraisópolis - MG</strong>,
+      formada e certificada nas principais técnicas de
+       <strong>extensão de cílios.</strong>
+  </p>
+
+  <p>
+    Minha missão é valorizar sua beleza natural com 
+    <strong>cílios marcantes, leves e elegantes</strong>,
+     respeitando seu estilo e o formato dos seus olhos. Cada atendimento é feito com 
+     <strong>cuidado, técnica e atenção aos detalhes</strong>,
+      garantindo conforto, segurança e um resultado encantador.
+  </p>
+  <p>
+    Se você busca <strong>cílios perfeitos</strong> 
+    e um olhar inesquecível, agende seu horário e venha reançar sua beleza comigo!
+  </p>
+
   </section>
 
-  <section id="tecnicas">
-    <h2>Técnicas de Extensão de Cílios</h2>
-    <div class="servico">
-      <h3>Fio a Fio</h3>
-      <p>Delicado e natural, combina com você. Pura elegância e luxo.</p>
-      <p><strong>Investimento: R$150,00</strong></p>
-    </div>
-    <!-- Outras técnicas podem ser incluídas aqui -->
+  <section id="techniques" class="techniques">
+    <h2>Técnicas</h2>
+<div class="technique">
+  <img src="imagens/volume-brasileiro.jpg" alt="Volume Brasileiro" class="technique-img">
+  <div class="technique-info">
+    <h3>Brasileiro</h3>
+    <div class="investimento-badge">Investimento</div>
+    <h4 class="technique-price">R$100,00</h4>
+    <p class="technique-desc"><em>Um clássico da extenção de cílios. Olhar intenso e marcante, mas com aspecto ainda natural. </em></p>
+  </div>
+</div>
+<div class="technique technique-img-right">
+  <img src="imagens/volume-egipcio.png" alt="Volume Egípcio" class="technique-img">
+  <div class="technique-info">
+    <h3>Volume Egípcio</h3>
+    <div class="investimento-badge">Investimento</div>
+    <h4 class="technique-price">R$100,00</h4>
+    <p class="technique-desc"><em>Visual mais expressivo abrindo o olhar mas mantendo a sensação de naturalidade</em></p>
+  </div>
+</div>
+<div class="technique">
+  <img src="imagens/4D.jpg" alt="4D" class="technique-img">
+  <div class="technique-info">
+    <h3>4D</h3>
+    <div class="investimento-badge">Investimento</div>
+    <h4 class="technique-price">R$100,00</h4>
+    <p class="technique-desc"><em>Marcante e volumosa, a técnica 4D proporciona um olhar impactante e cheio de personalidade.</em></p>
+  </div>
+</div>
   </section>
 
-  <section id="experiencia">
+  <section id="experiencia" class="experiencia">
     <h2>Experiência e Certificações</h2>
-    <p>Participei de diversos cursos e workshops com os melhores profissionais da área. Tenho certificações que comprovam minha dedicação à excelência e qualidade nos serviços prestados.</p>
+    <p>Ao longo dos anos, investi em formação contínua, participando de cursos e workshops com os melhores profissionais da área. Tenho certificações que comprovam minha expertise e comprometimento com a qualidade.</p>
   </section>
 
-  <section id="filosofia">
+  <section id="filosofia" class="filosofia">
     <h2>Minha Filosofia</h2>
-    <p>Atendimento personalizado: cada cliente é única e merece atenção exclusiva para sair daqui ainda mais confiante e radiante.</p>
+    <h3>Atendimento Personalizado</h3>
+    <p>Acredito que cada cliente é única e merece um atendimento exclusivo.</p>
   </section>
 
-  <section id="depoimentos">
-    <h2>O que dizem sobre mim</h2>
-    <blockquote>
-      <p>"Fran, amei o trabalho! Está lindo e tem durado muito. Você é muito caprichosa, amei!"</p>
-      <cite>- Camila</cite>
-    </blockquote>
-  </section>
-
-  <section id="contato">
-    <h2>Entre em Contato</h2>
-    <form>
-      <label>Nome:<br><input type="text" name="nome" required></label><br>
-      <label>Email:<br><input type="email" name="email" required></label><br>
-      <label>Telefone:<br><input type="tel" name="telefone" required></label><br>
-      <button type="submit">Enviar</button>
-    </form>
-
-    <div class="info-contato">
-      <p><strong>WhatsApp:</strong> <a href="https://wa.me/5511999998888" target="_blank">+55 11 99999-8888</a></p>
-      <p><strong>Email:</strong> franciele.costa@email.com</p>
-      <p><strong>Endereço:</strong> Rua das Flores, 123, Paraisópolis - MG</p>
-      <p><strong>Horário:</strong><br>Seg a Sex: 9h às 18h<br>Sábado: 10h às 14h<br>Domingo: Fechado</p>
+  <section id="feedback" class="feedback">
+    <h2>Feedback Recebidos</h2>
+    <div class="technique">
+      <h3>Camila</h3>
+      <p>"Fran, amei o trabalho está lindo e tem durado muito, você é muito caprichosa, amei!"</p>
+    </div>
+    <div class="technique">
+      <h3>Camila</h3>
+      <p>"Fran, amei o trabalho está lindo e tem durado muito, você é muito caprichosa, amei!"</p>
+    </div>
+    <div class="technique">
+      <h3>Camila</h3>
+      <p>"Fran, amei o trabalho está lindo e tem durado muito, você é muito caprichosa, amei!"</p>
     </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Franciele Costa - Extensão de Cílios Paraisópolis - MG</p>
-  </footer>
+  <section id="formulario" class="formulario">
+    <h2>Entre em contato</h2>
+    <input type="text" placeholder="Nome" />
+    <input type="email" placeholder="Email" />
+    <input type="tel" placeholder="Telefone" />
+    <button>Enviar</button>
+  </section>
 
+  <section id="contato" class="contato">
+    <h2>Outras formas de contato</h2>
+    <p>+55 35 98422-2134</p>
+    <p>franciele.costa@email.com</p>
+    <p>Paraisópolis - MG</p>
+    <p><strong>Horário de funcionamento:</strong></p>
+    <p>Somente com agendamento prévio</p>
+  </section>
+
+  <script>
+    // Fechar menu ao clicar em um link
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('nav').classList.remove('show');
+      });
+    });
+  </script>
 </body>
 </html>
