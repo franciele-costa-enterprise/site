@@ -1,0 +1,220 @@
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333333;
+  padding-top: 60px;
+}
+
+/* ------------------------------- */
+/* 📱 Mobile First (até 599px)     */
+/* ------------------------------- */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 999;
+}
+
+.menu-button {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.site-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav {
+  display: none;
+  flex-direction: column;
+  background-color: #fff;
+  position: fixed;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+
+nav a {
+  padding: 15px;
+  text-decoration: none;
+  color: #333;
+  border-top: 1px solid #eee;
+}
+
+nav a:hover {
+  background-color: #f7f7f7;
+}
+
+.show {
+  display: flex;
+}
+
+.hero-image {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.profile-image {
+  width: 100vw;
+  height: 500px;
+  object-fit: fill; /* Distorce para preencher toda a área */
+  display: block;
+  margin: 0 auto;
+}
+
+section,
+footer {
+  margin: 40px 20px;
+}
+
+h2,
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.welcome h2 {
+  font-size: 1.5em;
+  color: #aa6699;
+}
+
+p {
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.technique {
+  display: flex;
+  align-items: flex-start;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  gap: 20px;
+}
+
+.technique-img {
+  width: 170px;
+  height: 150px;
+  object-fit: fill;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.18);
+  flex-shrink: 0;
+  margin-top: 30px;
+  background: #fff;
+}
+.technique.technique-img-right {
+  flex-direction: row-reverse;
+}
+.technique-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.technique-info h3 {
+  margin: 30px 0 10px 0;
+  text-align: center;
+  font-family: 'Rosarivo', serif;
+ font-weight: normal; /* Remove o bold */
+}
+
+
+.investimento-badge {
+  display: inline-block;
+  padding: 6px 18px;
+  border: 1px solid #111;
+  border-radius: 18px;
+  font-weight: normal;
+  margin-bottom: 8px;
+  background: #fff;
+  text-align: center;
+}
+
+.technique-price {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: #222;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Rosarivo', serif;
+}
+
+.technique-desc {
+  font-style: italic;
+  color: #555;
+  margin: 0;
+  font-size: small;
+}
+
+.formulario input,
+.formulario button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+.formulario button {
+  background-color: #f7c1dc;
+  color: #333;
+  border: none;
+  cursor: pointer;
+}
+
+.contato p {
+  text-align: center;
+  margin: 4px 0;
+}
+
+/* --------------------------------------- */
+/* 💻 Tablet (600px até 1024px)            */
+/* --------------------------------------- */
+@media (min-width: 600px) {
+  body {
+    padding-top: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  .hero-image {
+    max-width: 600px;
+  }
+}
+
+/* --------------------------------------- */
+/* 🖥️ Desktop (1025px ou mais)             */
+/* --------------------------------------- */
+@media (min-width: 1025px) {
+  body {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rosarivo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
